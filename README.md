@@ -1,2 +1,4 @@
 # golang_financial
-Common financial functions replicating those found in MS Excel
+Common financial functions mimicking those found in MS Excel.
+
+<stong>Warning: These functions are intended for use in approximation. They have not been written by a mathematician. Error are to be expected. If you need a precise tool then these are not the functions you are looking for.</strong>
