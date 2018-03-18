@@ -1,5 +1,5 @@
 # golang_financial
-Common financial functions mimicking those found in MS Excel.
+Common financial functions mimicking those found in spreadsheets.
 
 ## function list
 
