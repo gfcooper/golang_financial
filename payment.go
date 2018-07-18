@@ -5,13 +5,17 @@ import (
 )
 
 // PMT calculates a payment close enough for what we need.
-func PMT(rate, periods, principal, balloon float64) (payment float64) {
+func PMT(rate, periods, principal, balloon float64, when int) (payment float64) {
 
 	pPayment := principalPayment(rate, periods, principal-balloon)
 
 	bPayment := balloonPayment(rate, balloon)
 
 	payment = (pPayment + bPayment) * 100
+
+	if when == 1 {
+		payment = payment / (1 + rate)
+	}
 
 	return math.Round(payment) / 100
 }
